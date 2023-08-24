@@ -26,32 +26,32 @@
 			</div>
 		</div>
 
-<script>
-const focusedInput = document.getElementById("bar");
-const inputContainer = document.getElementById("input-container");
+<!-- <script> -->
+<!-- const focusedInput = document.getElementById("bar"); -->
+<!-- const inputContainer = document.getElementById("input-container"); -->
 
 
 
-document.body.addEventListener("mousedown", function(event) {
-  const isClickedInsideInput = focusedInput.contains(event.target);
-  
-  if (!isClickedInsideInput) {
-    event.preventDefault();
-    focusedInput.focus();
-  }
-});
+<!-- document.body.addEventListener("mousedown", function(event) { -->
+<!--   const isClickedInsideInput = focusedInput.contains(event.target); -->
+<!--    -->
+<!--   if (!isClickedInsideInput) { -->
+<!--     event.preventDefault(); -->
+<!--     focusedInput.focus(); -->
+<!--   } -->
+<!-- }); -->
 
 
-focusedInput.addEventListener("keydown", function(event) {
-  if (event.key === "Tab" || event.key === "Escape") {
-    event.preventDefault(); // Prevent default tab or escape behavior
-  }
-});
+<!-- focusedInput.addEventListener("keydown", function(event) { -->
+<!--   if (event.key === "Tab" || event.key === "Escape") { -->
+<!--     event.preventDefault(); // Prevent default tab or escape behavior -->
+<!--   } -->
+<!-- }); -->
 
 
 
 
-</script>
+<!-- </script> -->
 
 </body>
 
