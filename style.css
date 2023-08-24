@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root {
+    --color-bg: #1E1E2E;
+    --color-fg: #D9E0EE;
+    --color-link: #b4befe;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: "Ubuntu";
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.vapor {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #b4befe;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 460px 600px 1fr;
+  grid-template-areas:
+    ". left right .";
+  column-gap: 80px;
+  justify-items: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.left-container {
+  grid-area: left;
+  aspect-ratio: 1/1;
+}
+
+.right-container {
+  grid-area: right;
+  height: 50%;
+  width: 100%;
+}
+
+
+.bar {
+	background: 3px var(--color-bg);
+	border-radius: 10px;
+	border: 3px solid var(--color-fg);
+	border-color: var(--color-bg);
+	outline: none;
+	color: var(--color-fg);
+	color: #b4befe;
+	font-size: 20pt;
+	width: 100%;
+}
+
+.gif img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+

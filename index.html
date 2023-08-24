@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>~/startpage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="data:,">
+</head>
+
+<body>
+	<div class="container">
+		<div class="left-container">
+
+
+			<body>
+				<div class="gif">
+					<img class='vapor' src="clouds.gif" width="450px" height="400px" />
+				</div>
+		</div>
+		<div class="right-container">
+			<div class="input-container" id="input-container">
+				<form id="search-form" action="https://www.google.com/search" method="GET">
+					<input type="text" autocomplete="off" placeholder=" . . ." id="bar" class="bar" autofocus name="q" tabindex="1">
+				</form>
+			</div>
+		</div>
+
+<script>
+const focusedInput = document.getElementById("bar");
+const inputContainer = document.getElementById("input-container");
+
+
+
+document.body.addEventListener("mousedown", function(event) {
+  const isClickedInsideInput = focusedInput.contains(event.target);
+  
+  if (!isClickedInsideInput) {
+    event.preventDefault();
+    focusedInput.focus();
+  }
+});
+
+
+focusedInput.addEventListener("keydown", function(event) {
+  if (event.key === "Tab" || event.key === "Escape") {
+    event.preventDefault(); // Prevent default tab or escape behavior
+  }
+});
+
+
+
+
+</script>
+
+</body>
+
+</html>
